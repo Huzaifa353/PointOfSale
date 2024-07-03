@@ -10,7 +10,7 @@
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:HCN935CKjg6bF5AE1dL+vSnabZ4ISKNyOuEtkANPZn4=',
+    'key' => 'base64:k2nNv3SZKe0S3bpY9RJapfWFJwnk0YIZ4xAcAyHcyrk=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -186,7 +186,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'D:\\pos\\storage\\framework/cache/data',
+        'path' => 'D:\\POS\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -336,7 +336,7 @@
     array (
       'enabled' => true,
       'driver' => 'file',
-      'path' => 'D:\\pos\\storage\\debugbar',
+      'path' => 'D:\\POS\\storage\\debugbar',
       'connection' => NULL,
       'provider' => '',
       'hostname' => '127.0.0.1',
@@ -348,6 +348,8 @@
     'include_vendors' => true,
     'capture_ajax' => true,
     'add_ajax_timing' => false,
+    'ajax_handler_auto_show' => true,
+    'ajax_handler_enable_tab' => true,
     'error_handler' => false,
     'clockwork' => false,
     'collectors' => 
@@ -426,6 +428,9 @@
     ),
     'inject' => true,
     'route_prefix' => '_debugbar',
+    'route_middleware' => 
+    array (
+    ),
     'route_domain' => NULL,
     'theme' => 'auto',
     'debug_backtrace_limit' => 50,
@@ -439,12 +444,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'D:\\pos\\storage\\app',
+        'root' => 'D:\\POS\\storage\\app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'D:\\pos\\storage\\app/public',
+        'root' => 'D:\\POS\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -491,13 +496,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'D:\\pos\\storage\\logs/laravel.log',
+        'path' => 'D:\\POS\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'D:\\pos\\storage\\logs/laravel.log',
+        'path' => 'D:\\POS\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -547,7 +552,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'D:\\pos\\storage\\logs/laravel.log',
+        'path' => 'D:\\POS\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -570,7 +575,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'D:\\pos\\resources\\views/vendor/mail',
+        0 => 'D:\\POS\\resources\\views/vendor/mail',
       ),
     ),
     'log_channel' => NULL,
@@ -581,7 +586,7 @@
     'stubs' => 
     array (
       'enabled' => false,
-      'path' => 'D:\\pos\\vendor/nwidart/laravel-modules/src/Commands/stubs',
+      'path' => 'D:\\POS\\vendor/nwidart/laravel-modules/src/Commands/stubs',
       'files' => 
       array (
         'routes/web' => 'Routes/web.php',
@@ -645,9 +650,9 @@
     ),
     'paths' => 
     array (
-      'modules' => 'D:\\pos\\Modules',
-      'assets' => 'D:\\pos\\public\\modules',
-      'migration' => 'D:\\pos\\database/migrations',
+      'modules' => 'D:\\POS\\Modules',
+      'assets' => 'D:\\POS\\public\\modules',
+      'migration' => 'D:\\POS\\database/migrations',
       'generator' => 
       array (
         'config' => 
@@ -840,7 +845,7 @@
       'enabled' => false,
       'paths' => 
       array (
-        0 => 'D:\\pos\\vendor/*/*',
+        0 => 'D:\\POS\\vendor/*/*',
       ),
     ),
     'composer' => 
@@ -869,7 +874,7 @@
       'file' => 
       array (
         'class' => 'Nwidart\\Modules\\Activators\\FileActivator',
-        'statuses-file' => 'D:\\pos\\modules_statuses.json',
+        'statuses-file' => 'D:\\POS\\modules_statuses.json',
         'cache-key' => 'activator.installed',
         'cache-lifetime' => 604800,
       ),
@@ -958,16 +963,19 @@
       'domain' => NULL,
       'secret' => NULL,
       'endpoint' => 'api.mailgun.net',
+      'disable-tls' => true,
     ),
     'postmark' => 
     array (
       'token' => NULL,
+      'disable-tls' => true,
     ),
     'ses' => 
     array (
       'key' => '',
       'secret' => '',
       'region' => 'us-east-1',
+      'disable-tls' => true,
     ),
   ),
   'session' => 
@@ -976,7 +984,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'D:\\pos\\storage\\framework/sessions',
+    'files' => 'D:\\POS\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -1009,8 +1017,8 @@
     ),
     'scan_paths' => 
     array (
-      0 => 'D:\\pos\\app',
-      1 => 'D:\\pos\\resources',
+      0 => 'D:\\POS\\app',
+      1 => 'D:\\POS\\resources',
     ),
     'ui_url' => 'languages',
     'database' => 
@@ -1024,9 +1032,9 @@
   array (
     'paths' => 
     array (
-      0 => 'D:\\pos\\resources\\views',
+      0 => 'D:\\POS\\resources\\views',
     ),
-    'compiled' => 'D:\\pos\\storage\\framework\\views',
+    'compiled' => false,
   ),
   'image' => 
   array (
@@ -1092,6 +1100,12 @@
         'manager' => '',
         'company' => '',
       ),
+      'cells' => 
+      array (
+        'middleware' => 
+        array (
+        ),
+      ),
     ),
     'extension_detector' => 
     array (
@@ -1127,6 +1141,7 @@
       array (
         'store' => NULL,
       ),
+      'default_ttl' => 10800,
     ),
     'transactions' => 
     array (
@@ -1138,7 +1153,10 @@
     ),
     'temporary_files' => 
     array (
-      'local_path' => 'D:\\pos\\storage\\framework/cache/laravel-excel',
+      'local_path' => 'D:\\POS\\storage\\framework/cache/laravel-excel',
+      'local_permissions' => 
+      array (
+      ),
       'remote_disk' => NULL,
       'remote_prefix' => NULL,
       'force_resync_remote' => NULL,
@@ -1168,6 +1186,8 @@
       array (
         'max_chained_job_reporting_depth' => 5,
       ),
+      6 => 'Spatie\\LaravelIgnition\\FlareMiddleware\\AddContext',
+      7 => 'Spatie\\LaravelIgnition\\FlareMiddleware\\AddExceptionHandledStatus',
       'Spatie\\FlareClient\\FlareMiddleware\\CensorRequestBodyFields' => 
       array (
         'censor_fields' => 
@@ -1181,6 +1201,11 @@
         'headers' => 
         array (
           0 => 'API-KEY',
+          1 => 'Authorization',
+          2 => 'Cookie',
+          3 => 'Set-Cookie',
+          4 => 'X-CSRF-TOKEN',
+          5 => 'X-XSRF-TOKEN',
         ),
       ),
     ),
@@ -1213,12 +1238,15 @@
       16 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\UndefinedViewVariableSolutionProvider',
       17 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\GenericLaravelExceptionSolutionProvider',
       18 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\OpenAiSolutionProvider',
+      19 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\SailNetworkSolutionProvider',
+      20 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\UnknownMysql8CollationSolutionProvider',
+      21 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\UnknownMariadbCollationSolutionProvider',
     ),
     'ignored_solution_providers' => 
     array (
     ),
     'enable_runnable_solutions' => NULL,
-    'remote_sites_path' => 'D:\\pos',
+    'remote_sites_path' => 'D:\\POS',
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
     'settings_file_path' => '',
@@ -1276,23 +1304,9 @@
     'cache' => 
     array (
       'expiration_time' => 
-      DateInterval::__set_state(array(
-         'y' => 0,
-         'm' => 0,
-         'd' => 0,
-         'h' => 24,
-         'i' => 0,
-         's' => 0,
-         'f' => 0.0,
-         'weekday' => 0,
-         'weekday_behavior' => 0,
-         'first_last_day_of' => 0,
-         'invert' => 0,
-         'days' => false,
-         'special_type' => 0,
-         'special_amount' => 0,
-         'have_weekday_relative' => 0,
-         'have_special_relative' => 0,
+      \DateInterval::__set_state(array(
+         'from_string' => true,
+         'date_string' => '24 hours',
       )),
       'key' => 'spatie.permission.cache',
       'store' => 'default',

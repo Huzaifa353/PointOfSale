@@ -15,7 +15,9 @@ class GeneralSettingsSeeder extends Seeder
     {
         $sql = "
     		INSERT INTO general_settings 
-    		VALUES ('1', 'Point of Sale', '20220905125905.png', '0', '1', '', 'own', 'd-m-Y', 		'Koderin', 'standard', '2', '1', 'default.css', '2018-07-06 12:13:11', '2023-06-16 		19:42:32', 'prefix', '', '0', '', '980980');
+    (site_title, site_logo, is_rtl, currency, staff_access, without_stock, date_format, developed_by, invoice_format, `decimal`, theme, currency_position, company_name)
+VALUES 
+    ('Point of Sale', '20220905125905.png', 0, '1', 'all', 'no', 'd-m-Y', 'Koderin', 'standard', 2, 'default.css', 'prefix', 'POS Store');
 		";
 
 		// Execute raw SQL

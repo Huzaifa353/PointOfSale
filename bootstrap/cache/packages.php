@@ -21,6 +21,21 @@
       'Image' => 'Intervention\\Image\\Facades\\Image',
     ),
   ),
+  'joedixon/laravel-translation' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'JoeDixon\\Translation\\TranslationServiceProvider',
+      1 => 'JoeDixon\\Translation\\TranslationBindingsServiceProvider',
+    ),
+  ),
+  'laravel/legacy-factories' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Illuminate\\Database\\Eloquent\\LegacyFactoryServiceProvider',
+    ),
+  ),
   'laravel/tinker' => 
   array (
     'providers' => 
